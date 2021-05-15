@@ -5,11 +5,6 @@ ENV TZ=Asia/Shanghai
 
 RUN ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-#先添加163源
-RUN tee /etc/apt/sources.list << EOF\
-    deb http://mirrors.163.com/debian/ jessie main non-ffree contrib \
-    deb http://mirrirs.163.com/debian/ jessie-updates main non-free contrib \
-    EOF
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     easy-rsa \

@@ -9,3 +9,5 @@ services:
     container_name: xxl-job-executor
     hostname: xxl-job-executor
     image: xxl-job-executor
+    environment:
+      PARAMS: ${PARAMS}

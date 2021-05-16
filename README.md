@@ -1,4 +1,10 @@
 # docker-xxl-job-executor
+[docker](https://hub.docker.com/repository/docker/tandaly/xxl-job-executor/builds)
+
+[阿里云](https://cr.console.aliyun.com/repository/cn-hangzhou/tandaly/xxl-job-executor/build)
+
+
+
 xxl-job 执行器 支持 python curl shell
 
 

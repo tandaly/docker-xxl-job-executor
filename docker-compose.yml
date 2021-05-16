@@ -1,0 +1,11 @@
+version: '2'
+services:
+  xxl-job-executor:
+    build:
+      context: ./
+    restart: always
+    ports:
+      - 8080:8080
+    container_name: xxl-job-executor
+    hostname: xxl-job-executor
+    image: xxl-job-executor
